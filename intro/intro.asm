@@ -264,12 +264,12 @@ CreditsTextYadaYada:
 	.byte $20, $4a, "DEVELOPERS", $FF
 	.byte $20, $68, "--------------", $FF
 	.byte $20, $ac, "WEB2000", $FF
-	.byte $20, $e8, "SIMPLISTIC6502", $FF
-	.byte $21, $2d, "108PI", $FF
-	.byte $21, $89, "ORIGINAL DEVS", $FF
-	.byte $21, $a8, "---------------", $FF
-	.byte $21, $eb, "PELLSSON", $FF
-	.byte $22, $29, "THREECREEPIO", $FF
+	.byte $20, $ed, "108PI", $FF
+	.byte $21, $49, "ORIGINAL DEVS", $FF
+	.byte $21, $68, "---------------", $FF
+	.byte $21, $ab, "PELLSSON", $FF
+	.byte $21, $e9, "THREECREEPIO", $FF
+	.byte $22, $28, "SIMPLISTIC6502", $FF
 
 
 	.byte $22, $aa, "FORKED FROM", $FF

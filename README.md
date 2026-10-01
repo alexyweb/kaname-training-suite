@@ -90,8 +90,8 @@ In the new notation, the leading digit is the lowest 2 bits of Mario's Y positio
 With regular D70 FPG inputs, the value is now 1D70. A good FF0 save becomes 3D70, and a frame late FF0 save becomes 0D70. Top step setups that give 2D70 also work, so 0D70 is the only value that can't get FPG.
 
 # Credits
-- Developers: web2000, Simplistic6502, 108Pi
-- Original Developers: Threecreepio, pellsson
+- Developers: web2000, 108Pi
+- Original Developers: Threecreepio, pellsson, Simplistic6502
 - Sprites for Peach shamelessly stolen from [Super Mario Bros.: Peach Edition](https://www.romhacking.net/hacks/1229)
 
 # Repositories Referenced
