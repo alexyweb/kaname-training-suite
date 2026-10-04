@@ -9,7 +9,7 @@ A collection of speedrun practice ROMs for Super Mario Bros. (NTSC & PAL), Super
 - Super Mario Bros. 2: `20E50128742162EE47561DB9E82B2836399C880C`
 - All Night Nippon Super Mario Bros.: `F30BDD3C556604D7EAA6D0F4864D5566E519B5D4`
 
-You can patch the NES/FDS files using the [Kaname Training Suite Patcher](https://web-2000.neocities.org/practicerom/patcher/) by 108Pi, based on [ROM Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) by Marc Robledo.
+You can patch the NES/FDS files using the [Kaname Training Suite Patcher](https://alexyweb.neocities.org/practicerom/patcher/) by 108Pi, based on [ROM Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) by Marc Robledo.
 
 # Features
 ## All Games
@@ -38,7 +38,7 @@ You can patch the NES/FDS files using the [Kaname Training Suite Patcher](https:
 	
 - Advanced features for those who want to experiment.
     - This is accessed by holding the A button while pressing start on the practice ROM title screen.
-    - Ability to select one of the 32,767 possible RNG states during normal gameplay. This is useful for messing around with frame offsets and can be calculated at this page: https://web-2000.neocities.org/practicerom/rng
+    - Ability to select one of the 32,767 possible RNG states during normal gameplay. This is useful for messing around with frame offsets and can be calculated at this page: https://alexyweb.neocities.org/practicerom/rng
     - Select where in the 21-frame cycle you would like to enter the level at, useful for practicing judges in 8-1 of SMB1 for example.
 
 - Toggle pre-set frame offsets for specific categories by pressing the A button on the in-game title screen.
