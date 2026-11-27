@@ -1711,12 +1711,22 @@ skip_sock_hash:
 Walking_AlignmentLookup:
 		.byte $00, $10, $08
 Running_AlignmentLookup:
-		.byte $18, $00, $10, $14, $08
+		.byte $18, $00, $10, $20, $08
+
+Walking_AlignmentOffset:
+		.byte 0, 1, 2
+Running_AlignmentOffset:
+		.byte 0, 1, 2
 .else
 Walking_AlignmentLookup:
 		.byte $14, $00, $08, $10, $18, $04, $0c
 Running_AlignmentLookup:
 		.byte $00, $10, $20
+
+Walking_AlignmentOffset:
+		.byte 0, 4, 1
+Running_AlignmentOffset:
+		.byte 0, 1, 2
 .endif
 
 CompString:
@@ -1731,9 +1741,10 @@ CompString:
 		sec
 		sbc #$18
 		lsr_by 4
+		tay
+		lda Walking_AlignmentOffset,y
 		clc
 		adc Player_PageLoc
-		pha
 		jsr ModuloSignedA
 		tax
 		lda Walking_AlignmentLookup,x
@@ -1746,7 +1757,9 @@ CompString:
         lda #3 ; PAL running lookup has 3 entries
 .endif
         sta $00
-        pla
+		lda Running_AlignmentOffset,y
+		clc
+		adc Player_PageLoc
 		jsr ModuloSignedA
 		tax
 		lda Running_AlignmentLookup,x
@@ -1763,15 +1776,14 @@ CompString:
 ModuloSignedA:
         cmp #$00
         bpl :+
-@negative_num:
 		clc
+@negative_num:
 		adc $00
-		cmp $00
-		bcs @negative_num
+		bcc @negative_num
 		rts
 @positive_num:
 		sbc $00
-:		cmp $00
+:       cmp $00
 		bcs @positive_num
 		rts
 	
